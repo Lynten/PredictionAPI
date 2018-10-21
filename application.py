@@ -77,6 +77,10 @@ BOUNDARIES = {
 # ******************************************************************************
 
 # Core
+@app.route('/api', methods=['GET'])
+def home():
+    return "Hello, it works!"
+
 @app.route('/api/v1.0/aballone', methods=['POST'])
 def index():
 
